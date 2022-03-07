@@ -84,12 +84,11 @@ h3 {
 }
 
 h1 {
-	margin-bottom: 0.5rem;
 	padding: 1rem;
-	font: 700 italic 45px var(--serif);
+	letter-spacing: 0.3rem;
+	font: 700 25px var(--serif);
 	text-transform: lowercase;
-	text-decoration: var(--transparency) overline underline 2px;
-	text-underline-offset: 15px;
+	text-decoration: var(--transparency) underline 2px;
 }
 
 h2 {
@@ -141,7 +140,7 @@ a:hover {
 	text-shadow: 1px 1px 1px var(--melon);
 	font-size: 60px;
 	color: var(--venetian);
-	vertical-align: bottom;
+	vertical-align: middle;
 }
 
 /*** colors ***/
