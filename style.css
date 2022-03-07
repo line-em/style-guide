@@ -13,6 +13,7 @@
 	--lightermelon: #f3d4ce;
 	--redsalsa: #fb4b4e;
 	--venetian: #c81919;
+	--transparency: rgba(255, 255, 255, 0.3);
 	--sans: 'Karla', sans-serif;
 	--serif: 'Fraunces', serif;
 	--mono: 'DM Mono', monospace;
@@ -22,18 +23,10 @@ body {
 	font: 400 18px/1.5 var(--serif);
 	background-color: var(--lightermelon);
 	color: var(--spacecadet);
-	scrollbar-width: thin;
-	scrollbar-color: var(--venetian) var(--lavender);
 }
-
-header {
-	background-color: var(--melon);
-	color: var(--spacecadet);
-	/*background-color: rgba(255, 255, 255, 0.3);*/
-}
-
-section {
-	background-color: var(--lavender);
+section,
+ul {
+	background-color: rgba(255, 255, 255, 0.4);
 }
 
 header li,
@@ -41,14 +34,16 @@ header li,
 #styling,
 #typography,
 #changelog,
-.color,
+.item,
 .lightbg,
 .darkbg,
 .venetian,
 .redsalsa,
 .lightmelon,
 .textbox,
-.melon {
+.melon,
+ul,
+.border {
 	display: inline-block;
 	margin: 10px;
 	padding: 10px;
@@ -59,26 +54,25 @@ header li,
 #typography,
 #styling,
 #changelog,
-.border {
+.border,
+ul {
 	border: 1px var(--melon) solid;
 	width: 65%;
 	box-shadow: 0 3px 2px var(--melon);
-	border-radius: 10px;
 }
 
 .half-width {
 	width: 50%;
 	padding: 5px;
 }
-
-.color {
+.item {
 	border: 1px var(--melon) solid;
 	text-align: center;
 	transition: ease 200ms;
-	background-color: rgba(255, 255, 255, 0.3);
+	background-color: var(--transparency);
 }
 
-.color:hover {
+#color-palette .item:hover {
 	background-color: var(--melon);
 }
 
@@ -94,7 +88,7 @@ h1 {
 	padding: 1rem;
 	font: 700 italic 45px var(--serif);
 	text-transform: lowercase;
-	text-decoration: var(--lightermelon) overline underline 2px;
+	text-decoration: var(--transparency) overline underline 2px;
 	text-underline-offset: 15px;
 }
 
@@ -121,9 +115,8 @@ li::before {
 a {
 	color: var(--spacecadet);
 	text-transform: uppercase;
-	background-color: var(--lightermelon);
 	font-weight: 700;
-	padding: 0 3px;
+	padding: 1px 4px;
 	text-decoration: underline var(--venetian) 1px;
 	transition: ease 200ms;
 }
@@ -147,7 +140,7 @@ a:hover {
 .ph-heart-fill {
 	text-shadow: 1px 1px 1px var(--melon);
 	font-size: 60px;
-	color: var(--redsalsa);
+	color: var(--venetian);
 	vertical-align: bottom;
 }
 
@@ -213,12 +206,21 @@ cite {
 	vertical-align: middle;
 }
 
-#styling .color {
+#styling .item {
 	height: 250px;
 }
 
 #styling li {
 	text-align: left;
+}
+
+#styling ul {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
 }
 
 /*** Changelog ***/
