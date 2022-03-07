@@ -14,7 +14,7 @@
 	--redsalsa: #fb4b4e;
 	--venetian: #c81919;
 	--transparency: rgba(255, 255, 255, 0.3);
-	--sans: 'Karla', sans-serif;
+	--sans: 'Assistant', sans-serif;
 	--serif: 'Fraunces', serif;
 	--mono: 'DM Mono', monospace;
 }
@@ -126,6 +126,7 @@ a:hover {
 }
 
 /*** icons ***/
+
 .ph-chat-dots-fill,
 .ph-text-t-fill,
 .ph-hand-waving-fill,
@@ -201,6 +202,7 @@ cite {
 }
 
 /***Styling ***/
+
 #styling article {
 	vertical-align: middle;
 }
