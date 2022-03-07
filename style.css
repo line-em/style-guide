@@ -21,7 +21,7 @@
 
 body {
 	font: 400 18px/1.5 var(--serif);
-	background-color: var(--lightermelon);
+	background-color: var(--lavender);
 	color: var(--spacecadet);
 }
 section,
@@ -56,7 +56,7 @@ ul,
 #changelog,
 .border,
 ul {
-	border: 1px var(--melon) solid;
+	border: 1px var(--lightermelon) solid;
 	width: 65%;
 	box-shadow: 0 3px 2px var(--melon);
 }
@@ -66,7 +66,7 @@ ul {
 	padding: 5px;
 }
 .item {
-	border: 1px var(--melon) solid;
+	border: 1px var(--lightermelon) solid;
 	text-align: center;
 	transition: ease 200ms;
 	background-color: var(--transparency);
