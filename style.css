@@ -58,7 +58,7 @@ nav {
 	border-radius: 38px;
 	background: linear-gradient(145deg, #f0e9e9, #fae5e1);
 	box-shadow: 10px 10px 30px var(--melon), -10px -10px 30px var(--lavender);
-	border: 1px var(--lightermelon) solid;
+	border: 1px var(--lavender) solid;
 	width: 65%;
 }
 
@@ -67,7 +67,7 @@ nav {
 	padding: 5px;
 }
 .item {
-	border: 1px var(--lightermelon) solid;
+	border: 2px var(--lightermelon) solid;
 	text-align: center;
 	transition: ease 200ms;
 	background-color: var(--transparency);
