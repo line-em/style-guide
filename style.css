@@ -65,11 +65,6 @@ nav {
 	width: 65%;
 }
 
-.half-width {
-	width: 50%;
-	padding: 5px;
-}
-
 .item {
 	border: 2px var(--lightermelon) solid;
 	text-align: center;
@@ -218,6 +213,11 @@ hr {
 	font-size: 16px;
 }
 
+.typo-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
 cite {
 	display: block;
 	margin: 15px;
@@ -254,4 +254,21 @@ cite {
 	box-shadow: none;
 }
 
-/*** Changelog ***/
+/***media query ***/
+
+@media screen and (max-width: 1000px) {
+	#color-palette,
+	#typography,
+	#styling,
+	#changelog,
+	.border,
+	nav {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.typo-wrapper {
+		grid-template-columns: 1fr;
+	}
+}
